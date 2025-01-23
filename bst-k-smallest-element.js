@@ -10,7 +10,7 @@ const kthSmallestElementInABst = (root, k) => {
   let result;
 
   const iterateRoot = (root) => {
-    if (!root) return;
+    if (!root || result !== null) return;
 
     iterateRoot(root.left);
 
